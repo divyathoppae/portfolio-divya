@@ -9,8 +9,7 @@ const About = () => {
   return (
     <section id='about'>
       
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h2>Divya Thoppae</h2>
 
       <div className="container about__container">
 
@@ -21,7 +20,16 @@ const About = () => {
           </div>
 
           <div className="about__content">
-            <div className="about__cards">
+          <p>
+                    I'm a second year student at Northeastern University pursuing a degree in <b>Computer Science and Fintech</b>. 
+                    I'm passionate about the intersection of technolgy and business to drive innovation.
+                    I have built a solid foundation in object oriented design, analyzing data and creating
+                    projects. I am excited to use these experiences to take on new complex challenges
+                    in this field!
+                    
+            </p>
+
+            {/* <div className="about__cards">
 
               <article className='about__card'>
                   <GiGraduateCap className='about__icon'/>
@@ -32,7 +40,7 @@ const About = () => {
               <article className='about__card'>
                   <BsBookmarkStar className='about__icon'/>
                   <h5>Current GPA</h5>
-                  <small>3.13</small>
+                  <small>3.21</small>
               </article>
 
               <article className='about__card'>
@@ -48,15 +56,8 @@ const About = () => {
 
               
 
-            </div>
-            <p>
-                    I'm a <b>Software Engineering Undergradute</b> at the University of Kelaniya. 
-                    I'm an enthusiastic and driven Software Engineering student seeking a challenging internship opportunity to apply 
-                    and expand my technical skills. 
-                    With a strong academic foundation in software engineering and hands-on experience in various programming languages,
-                    I am eager to contribute to innovative projects and learn from experienced professionals in the industry. I am a quick learner who is always ready to face challenges.
-                    
-            </p>
+            </div> */}
+            
 
           </div>
       </div>

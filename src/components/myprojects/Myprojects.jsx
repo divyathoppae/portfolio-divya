@@ -18,10 +18,13 @@ const Myprojects = () => {
             <div className="portfolio__item-image">
                 <img src={IMG1} alt="" />
             </div>
-            <h3>Fashion Gallery</h3>
-            <small className='text-light'>Spring Boot | ReactJs | MySQL</small>
+            <h3>Stock GUI</h3>
+            <small className='text-light'>a Java-based desktop application that allows users to track
+               and analyze stock market data through an intuitive graphical interface.
+                It enables users to visualize stock trends, compare performances, and make data-driven financial
+                 decisions.</small>
             <div className="portfolio__item-cta">
-              <a href="https://github.com/himani413/FashionGallery" target="_blank" rel='noreferrer' className='btn'>Github</a>
+              <a href="https://github.com/divyathoppae/StockGUIProject" target="_blank" rel='noreferrer' className='btn'>Github</a>
             </div>
               
         </article>
@@ -29,10 +32,12 @@ const Myprojects = () => {
             <div className="portfolio__item-image">
                 <img src={IMG2} alt="" />
             </div>
-            <h3>Beauty Garden</h3>
-            <small className='text-light'>HTML | CSS | JS | php | MySQL</small>
+            <h3>Minesweeper</h3>
+            <small className='text-light'>a Java-based implementation of the classic logic puzzle game, where players
+               uncover tiles while avoiding hidden mines. It features a user-friendly interface and customizable difficulty
+                levels, offering both challenge and entertainment.</small>
             <div className="portfolio__item-cta">
-              <a href="https://github.com/Thakshila-Bandara/Beauty-Garden" target="_blank" rel='noreferrer' className='btn'>Github</a>  
+              <a href="https://github.com/divyathoppae/Minesweeper" target="_blank" rel='noreferrer' className='btn'>Github</a>  
             </div>
             
         </article>
@@ -41,22 +46,12 @@ const Myprojects = () => {
                 <img src={IMG4} alt="" />
             </div>
             <h3>My Portfolio(This website)</h3>
-            <small className='text-light'>ReactJs</small>
+            <small className='text-light'>a personal website showcasing my skills, experiences, and projects,
+               built using modern web development tools like HTML, CSS, and JavaScript. It serves as a dynamic
+                platform to highlight my work, share my journey, and connect with potential collaborators or employers.</small>
             <div className="portfolio__item-cta">
-              <a href="https://github.com/Thakshila-Bandara/my-portfolio" target="_blank" rel='noreferrer' className='btn'>Github</a>
-              <a href="https://thakshila-bandara.github.io/my-portfolio/" target="_blank" rel='noreferrer' className='btn btn-primary'>Visit Website</a>  
-            </div>
-            
-        </article>
-        <article className='portfolio__item'>
-            <div className="portfolio__item-image">
-                <img src={IMG3} alt="" />
-            </div>
-            <h3>My Resume</h3>
-            <small className='text-light'>HTML | CSS | JS | Bootstrap</small>
-            <div className="portfolio__item-cta">
-              <a href="https://github.com/Thakshila-Bandara/my-resume" target="_blank" rel='noreferrer' className='btn'>Github</a>
-              <a href="https://thakshila-bandara.github.io/my-resume/" target="_blank" rel='noreferrer' className='btn btn-primary'>Visit Website</a>  
+              <a href="https://github.com/divyathoppae/portfolio-divya" target="_blank" rel='noreferrer' className='btn'>Github</a>
+              <a href="https://divyathoppae.github.io/portfolio-divya" target="_blank" rel='noreferrer' className='btn btn-primary'>Visit Website</a>  
             </div>
             
         </article>
