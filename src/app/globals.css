@@ -32,6 +32,12 @@ body {
   font-family: var(--font-body), sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  /* Keeps section headings from landing under the sticky nav on anchor jumps */
+  scroll-padding-top: 5rem;
+}
+
 /* Faint dot-grid texture for section corners (green dots on light background) */
 .bg-dot-grid {
   background-image: radial-gradient(

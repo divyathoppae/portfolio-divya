@@ -12,10 +12,15 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const title = "Divya Thoppae";
+const description =
+  "Product-minded software engineer building at the intersection of technology, business, and customer impact.";
+
 export const metadata: Metadata = {
-  title: "Divya Thoppae",
-  description:
-    "Divya Thoppae — product-minded software engineer building at the intersection of technology, business, and customer impact.",
+  title,
+  description,
+  openGraph: { title, description, type: "website" },
+  twitter: { card: "summary", title, description },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
