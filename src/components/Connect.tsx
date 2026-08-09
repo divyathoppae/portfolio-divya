@@ -1,8 +1,7 @@
 import { ArrowRight, FileText, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/BrandIcons";
 
-// TODO: replace with your GitHub profile URL.
-const GITHUB_URL = "#";
+const GITHUB_URL = "https://github.com/divyathoppae";
 
 const LINKS = [
   {
