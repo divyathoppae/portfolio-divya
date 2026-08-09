@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Divya Thoppae — Portfolio
 
-## Getting Started
+Personal portfolio site built with Next.js (App Router), TypeScript, and
+Tailwind CSS.
 
-First, run the development server:
+## Structure
+
+- `src/app/layout.tsx` — fonts (Bricolage Grotesque, Inter) and global metadata
+- `src/app/globals.css` — color tokens and the dot-grid background utilities
+- `src/components/` — one file per section (Nav, Hero, About, Skills,
+  Projects, Impact, Testimonials, Resume, Connect, Footer)
+- `src/data/projects.ts` — project cards; add a new project by appending an
+  object to the array
+- `src/components/icons/BrandIcons.tsx` — GitHub/LinkedIn marks (lucide-react
+  doesn't ship brand logos)
+
+## Things to fill in
+
+- `public/images/portrait.jpg` — your photo; swap the placeholder `<User>`
+  icon in `src/components/Hero.tsx` for an `<Image>` once it's added (there's
+  a comment in that file with the exact snippet)
+- `public/resume.pdf` — your resume PDF; the "View full resume" and "Resume"
+  buttons already link to `/resume.pdf`
+- `src/components/Connect.tsx` — replace `GITHUB_URL = "#"` with your GitHub
+  profile URL
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # production build
+npm run lint    # ESLint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploying to Vercel
 
-## Learn More
+**Option A — Vercel CLI**
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install -g vercel
+vercel login
+vercel        # deploys a preview
+vercel --prod # promotes to production
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Option B — GitHub + Vercel dashboard**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push this repo to GitHub:
+   ```bash
+   git remote add origin <your-repo-url>
+   git push -u origin master
+   ```
+2. Go to [vercel.com/new](https://vercel.com/new), import the repo, and click
+   Deploy. Vercel auto-detects Next.js, no config needed.
+3. Every push to `master` redeploys automatically.
